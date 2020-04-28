@@ -1,0 +1,11 @@
+updateUsers:
+  handler: src/handlers/update.users
+  events:
+    - http:
+        path: /users/{_id}
+        method: patch
+        request:
+          parameters:
+            path:
+              _id: true
+        cors: true 

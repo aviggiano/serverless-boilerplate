@@ -1,0 +1,11 @@
+deleteUser:
+  handler: src/handlers/delete.users
+  events:
+    - http:
+        path: /users/{_id}
+        method: delete
+        request:
+          parameters:
+            path:
+              _id: true
+        cors: true  

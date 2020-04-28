@@ -1,0 +1,7 @@
+getUsers:
+  handler: src/handlers/read.users
+  events:
+    - http:
+        path: /users
+        method: get
+        cors: true       

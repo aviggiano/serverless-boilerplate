@@ -1,0 +1,7 @@
+createUser:
+  handler: src/handlers/create.users
+  events:
+    - http:
+        path: /users
+        method: post
+        cors: true
